@@ -1,0 +1,13 @@
+
+body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+header { background: #fff; padding: 10px 20px; display: flex; align-items: center; gap: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+header h1 { color: blue; font-family: 'Arial Black', sans-serif; font-size: 1.8rem; margin: 0; }
+.logo { width: 80px; height: auto; }
+main { padding: 20px; }
+.categorias, .subcategorias, .produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+.categoria, .subcategoria, .produto { background: #fff; padding: 10px; border-radius: 10px; text-align: center; cursor: pointer; transition: 0.3s; }
+.categoria:hover, .subcategoria:hover, .produto:hover { transform: scale(1.05); background: #e0e0e0; }
+.categoria img, .subcategoria img { width: 90px; height: 90px; object-fit: contain; }
+.hidden { display: none; }
+.carrinho { background: #fff; padding: 15px; border-radius: 10px; margin-top: 20px; }
+.categoria-titulo { font-family: 'Arial Black'; color: red; margin-top: 10px; }

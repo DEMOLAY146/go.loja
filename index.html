@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRUPO GLOBO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <img src="logo.png" alt="Grupo Globo Logo" class="logo">
+    <h1>GRUPO GLOBO</h1>
+    <button onclick="irParaPaginaInicial()">🏠 Início</button>
+    <button onclick="irParaPaginaAnterior()">🔙 Voltar</button>
+</header>
+
+<main>
+    <section id="categorias" class="categorias">
+        <div class="categoria" onclick="mostrarSubcategorias('Globo Retífica')">
+            <img src="globo_retifica.png" alt="Globo Retífica">
+            <p class="categoria-titulo">Globo Retífica</p>
+        </div>
+        <div class="categoria" onclick="mostrarSubcategorias('Globo Eletrodiesel')">
+            <img src="globo_eletrodiesel.png" alt="Globo Eletrodiesel">
+            <p class="categoria-titulo">Globo Eletrodiesel</p>
+        </div>
+        <div class="categoria" onclick="mostrarSubcategorias('Globo Turbinas')">
+            <img src="globo_turbinas.png" alt="Globo Turbinas">
+            <p class="categoria-titulo">Globo Turbinas</p>
+        </div>
+    </section>
+
+    <section id="subcategorias" class="subcategorias hidden"></section>
+    <section id="produtos" class="produtos hidden"></section>
+    <section id="carrinho" class="carrinho hidden">
+        <h2>Carrinho de Compras</h2>
+        <ul id="lista-carrinho"></ul>
+        <p id="total"></p>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 GRUPO GLOBO</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
